@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-
 const {
   prod_Path,
   src_Path
@@ -15,7 +14,6 @@ module.exports = {
   entry: {
     main: './' + src_Path + '/index.ts'
   },
-  devtool: 'inline-source-map',
   resolve: {
     extensions: ['.ts', '.js']
   },
@@ -23,8 +21,10 @@ module.exports = {
     path: path.resolve(__dirname, prod_Path),
     filename: '[name].[chunkhash].js'
   },
-  //devtool: 'cheap-module-source-map',
   devtool: 'source-map',
+  devServer: {
+    open: true,
+  },
   module: {
     rules: [{
       test: /\.ts?$/,
