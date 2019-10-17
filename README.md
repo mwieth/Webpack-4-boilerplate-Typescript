@@ -15,7 +15,7 @@ This Webpack 4 Boilerplate comes with 2 builds:
   6. hash css and js file (file versioning for browser caching -> cache busting)<br>
 
 # Setup
-1. clone and run <code>npm install</code> in project folder
+1. <code>git clone https://github.com/mwieth/Webpack-4-boilerplate-Typescript.git</code>clone and run <code>npm install</code> in project folder
 2. <code>npm run build:dev</code> or just <code>npm start</code> which also starts the dev mode
 
 # Preprocessor support (default: Sass)
