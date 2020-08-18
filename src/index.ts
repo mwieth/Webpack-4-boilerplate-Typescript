@@ -1,6 +1,7 @@
+import sayHello from './sayhello';
 import './styles/style.scss';
 
-console.log('hello, world');
+console.log(sayHello('world'));
 
 const testMessage: string = 'TypeScript works';
 
